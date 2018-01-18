@@ -28,5 +28,18 @@ module.exports = {
             result -= number;
         });
         return result;
+    },
+    multiply: function(...numbers) {
+        if (numbers.length <= 1){
+            return 'At least two numbers must be provided'
+        }
+        var result = numbers[0];
+        numbers.forEach(function (number, i){
+            if (i == 0){
+                return;
+            }
+            result *= number;
+        });
+        return result;
     }
 };

@@ -5,28 +5,40 @@ A nodejs module for performing calculations
 ### add
 ```javascript
 var calqlate = require('calqlate')
-      add = calqlate.add;
-      var a = 1;
-      var b = 2;
-      var c = 3
-      console.log(add(1, 2, 3));
-      console.log(add(a, b, c));
-      console.log(a, 2, c, 4);
+add = calqlate.add;
+var a = 1;
+var b = 2;
+var c = 3
+console.log(add(1, 2, 3));
+console.log(add(a, b, c));
+console.log(multiply(a, 2, c, 4));
 ```
 ### subtract
+```javascript
 var calqlate = require('calqlate')
-      subtract = calqlate.subtract;
-      var a = 1;
-      var b = 2;
-      var c = 3
-      console.log(subtract(1, 2, 3));
-      console.log(subtract(a, b, c));
-      console.log(a, 2, c, 4);
+subtract = calqlate.subtract;
+var a = 1;
+var b = 2;
+var c = 3
+console.log(subtract(1, 2, 3));
+console.log(subtract(a, b, c));
+console.log(multiply(a, 2, c, 4));
+```
+### multiply
+```javascript
+var calqlate = require('calqlate')
+multiply = calqlate.multiply;
+var a = 1;
+var b = 2;
+var c = 3
+console.log(multiply(1, 2, 3));
+console.log(multiply(a, b, c));
+console.log(multiply(a, 2, c, 4));
 ```
 
 ## Tests
 
-  npm test
+npm test
 
 ## Contributing
 
