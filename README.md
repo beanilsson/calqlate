@@ -13,6 +13,17 @@ var calqlate = require('calqlate')
       console.log(add(a, b, c));
       console.log(a, 2, c, 4);
 ```
+### subtract
+var calqlate = require('calqlate')
+      subtract = calqlate.subtract;
+      var a = 1;
+      var b = 2;
+      var c = 3
+      console.log(subtract(1, 2, 3));
+      console.log(subtract(a, b, c));
+      console.log(a, 2, c, 4);
+```
+
 ## Tests
 
   npm test
