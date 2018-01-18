@@ -35,6 +35,17 @@ console.log(multiply(1, 2, 3));
 console.log(multiply(a, b, c));
 console.log(multiply(a, 2, c, 4));
 ```
+### divide
+```javascript
+var calqlate = require('calqlate')
+divide = calqlate.divide;
+var a = 1;
+var b = 2;
+var c = 3
+console.log(divide(1, 2, 3));
+console.log(divide(a, b, c));
+console.log(divide(a, 2, c, 4));
+```
 
 ## Tests
 

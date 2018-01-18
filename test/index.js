@@ -1,8 +1,9 @@
 var should = require('chai').should(),
     calqlate = require('../index'),
-    add = calqlate.add;
-subtract = calqlate.subtract,
-multiply = calqlate.multiply;
+    add = calqlate.add,
+    subtract = calqlate.subtract,
+    multiply = calqlate.multiply,
+    divide = calqlate.divide;
 
 describe('#add', function() {
     it('adds all plain numbers provided', function() {
@@ -82,5 +83,32 @@ describe('#multiply', function() {
 
     it('prints error message if no number is provided', function() {
         multiply().should.equal('At least two numbers must be provided');
+    });
+});
+
+describe('#divide', function() {
+    it('divides all plain numbers provided', function() {
+        divide(50, 2, 5).should.equal(5);
+    });
+
+    it('divides all numbers provided within variables', function() {
+        var a = 60;
+        var b = 2;
+        var c = 3;
+        divide(a, b, c).should.equal(10);
+    });
+
+    it('divideses all numbers provided within variables and plain numbers', function() {
+        var a = 6;
+        var b = 2;
+        divide(a, b, 3).should.equal(1);
+    });
+
+    it('prints error message if only one number is provided', function() {
+        divide(1).should.equal('At least two numbers must be provided');
+    });
+
+    it('prints error message if no number is provided', function() {
+        divide().should.equal('At least two numbers must be provided');
     });
 });
