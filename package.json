@@ -1,0 +1,26 @@
+{
+  "name": "calqlate",
+  "version": "0.1.0",
+  "description": "A nodejs module for performing calculations",
+  "main": "index.js",
+  "scripts": {
+    "test": "make test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/beanilsson/calqlate.git"
+  },
+  "keywords": [
+    "calculation"
+  ],
+  "author": "Bea Nilsson <beanilsson1@gmail.com> (https://github.com/beanilsson)",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/beanilsson/calqlate/issues"
+  },
+  "homepage": "https://github.com/beanilsson/calqlate#readme",
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^5.0.0"
+  }
+}
