@@ -46,6 +46,42 @@ console.log(divide(1, 2, 3));
 console.log(divide(a, b, c));
 console.log(divide(a, 2, c, 4));
 ```
+### squareArea
+```javascript
+var calqlate = require('calqlate')
+squareArea = calqlate.squareArea;
+var a = 1;
+var b = 2;
+console.log(squareArea(1, 2));
+console.log(squareArea(a, b));
+console.log(squareArea(a, 2));
+console.log(squareArea(b));
+console.log(squareArea(3));
+```
+### squarePerimiter
+```javascript
+var calqlate = require('calqlate')
+squarePerimiter = calqlate.squarePerimiter;
+var a = 1;
+var b = 2;
+console.log(squarePerimiter(1, 2));
+console.log(squarePerimiter(a, b));
+console.log(squarePerimiter(a, 2));
+console.log(squarePerimiter(b));
+console.log(squarePerimiter(3));
+```
+### squareDiagonalLength
+```javascript
+var calqlate = require('calqlate')
+squareDiagonalLength = calqlate.squareDiagonalLength;
+var a = 1;
+var b = 2;
+console.log(squareDiagonalLength(1, 2));
+console.log(squareDiagonalLength(a, b));
+console.log(squareDiagonalLength(a, 2));
+console.log(squareDiagonalLength(b));
+console.log(squareDiagonalLength(3));
+```
 
 ## Tests
 
