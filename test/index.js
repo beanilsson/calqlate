@@ -6,7 +6,10 @@ var should = require('chai').should(),
     divide = calqlate.divide,
     squareArea = calqlate.squareArea,
     squarePerimiter = calqlate.squarePerimiter,
-    squareDiagonalLength = calqlate.squareDiagonalLength;
+    squareDiagonalLength = calqlate.squareDiagonalLength,
+    circleRadius = calqlate.circleRadius,
+    circleCircumference = calqlate.circleCircumference,
+    circleDiameter = calqlate.circleDiameter;
 
 describe('#add', function() {
     it('adds all plain numbers provided', function() {
@@ -116,7 +119,7 @@ describe('#divide', function() {
     });
 });
 
-describe('#square area', function() {
+describe('#squareArea', function() {
     it('calculates the area given plain numbers', function() {
         squareArea(50, 2).should.equal(100);
     });
@@ -145,7 +148,7 @@ describe('#square area', function() {
     });
 });
 
-describe('#square perimiter', function() {
+describe('#squarePerimiter', function() {
     it('calculates the perimiter given plain numbers', function() {
         squarePerimiter(50, 2).should.equal(104);
     });
@@ -174,7 +177,7 @@ describe('#square perimiter', function() {
     });
 });
 
-describe('#square diagonal length', function() {
+describe('#squareDiagonalLength', function() {
     it('calculates the diagonal length given plain numbers', function() {
         squareDiagonalLength(50, 2).should.equal(50.039984012787215);
     });
@@ -200,5 +203,62 @@ describe('#square diagonal length', function() {
 
     it('prints error message if more than two numbers are provided', function() {
         squareDiagonalLength(2, 3, 4).should.equal('Only two values required');
+    });
+});
+
+describe('#circleRadius', function() {
+    it('calculates the radius given plain number', function() {
+        circleRadius(50).should.equal(25);
+    });
+
+    it('calculates the radius given a variable', function() {
+        var a = 60;
+        circleRadius(a).should.equal(30);
+    });
+
+    it('prints error message if no number is provided', function() {
+        circleRadius().should.equal('One value must be provided');
+    });
+
+    it('prints error message if more than one number is provided', function() {
+        circleRadius(2, 3).should.equal('Only one value required');
+    });
+});
+
+describe('#circleCircumference', function() {
+    it('calculates the circumference given plain number', function() {
+        circleCircumference(50).should.equal(157.07963267948966);
+    });
+
+    it('calculates the circumference given a variable', function() {
+        var a = 60;
+        circleCircumference(a).should.equal(188.49555921538757);
+    });
+
+    it('prints error message if no number is provided', function() {
+        circleCircumference().should.equal('One value must be provided');
+    });
+
+    it('prints error message if more than one number is provided', function() {
+        circleCircumference(2, 3).should.equal('Only one value required');
+    });
+});
+
+describe('#circleDiameter', function() {
+    it('calculates the diameter given plain number', function() {
+        circleDiameter(5).should.equal(10);
+    });
+
+    it('calculates the diameter given a variable', function() {
+        var a = 60;
+        circleDiameter(a).should.equal(120);
+    });
+
+    it('prints error message if no number is provided', function() {
+        circleDiameter().should.equal('One value must be provided');
+    });
+
+    it('prints error message if more than one number is provided', function() {
+        circleDiameter(2, 3).should.equal('Only one value required');
     });
 });

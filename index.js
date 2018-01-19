@@ -96,5 +96,41 @@ module.exports = {
             result = Math.sqrt((a * a) + (b * b));
         }
         return result;
+    },
+    circleRadius: function(d, ...a) {
+        if (a.length > 0){
+            return 'Only one value required';
+        }
+        var result;
+        if (d === undefined){
+            return 'One value must be provided';
+        }else {
+            result = d/2;
+        }
+        return result;
+    },
+    circleCircumference: function(d, ...a) {
+        if (a.length > 0){
+            return 'Only one value required';
+        }
+        var result;
+        if (d === undefined){
+            return 'One value must be provided';
+        }else {
+            result = Math.PI * d;
+        }
+        return result;
+    },
+    circleDiameter: function(r, ...a) {
+        if (a.length > 0){
+            return 'Only one value required';
+        }
+        var result;
+        if (r === undefined){
+            return 'One value must be provided';
+        }else {
+            result = r*2;
+        }
+        return result;
     }
 };

@@ -89,6 +89,33 @@ console.log(squareDiagonalLength(a, 2)); // calculate rectangle
 console.log(squareDiagonalLength(b)); // calculate quadrat
 console.log(squareDiagonalLength(3)); // calcualte quadrat
 ```
+### circleRadius
+Takes the diameter and calculates the radius of a circle.
+```javascript
+var calqlate = require('calqlate')
+circleRadius = calqlate.circleRadius;
+var a = 3;
+console.log(circleRadius(a));
+console.log(circleRadius(3));
+```
+### circleCircumference
+Takes the diameter and calculates the circumference of a circle.
+```javascript
+var calqlate = require('calqlate')
+circleCircumference = calqlate.circleCircumference;
+var a = 3;
+console.log(circleCircumference(a));
+console.log(circleCircumference(3));
+```
+### circleDiameter
+Takes the radius and calculates the diameter of a circle.
+```javascript
+var calqlate = require('calqlate')
+circleDiameter = calqlate.circleDiameter;
+var a = 3;
+console.log(circleDiameter(a));
+console.log(circleDiameter(3));
+```
 
 ## Tests
 
