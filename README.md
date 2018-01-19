@@ -116,6 +116,27 @@ var a = 3;
 console.log(circleDiameter(a));
 console.log(circleDiameter(3));
 ```
+### triangleArea
+Takes the base and height and calculates the height of a triangle.
+```javascript
+var calqlate = require('calqlate')
+triangleArea = calqlate.triangleArea;
+var a = 3;
+var b = 4;
+console.log(triangleArea(a, b));
+console.log(triangleArea(3, 4));
+```
+### trianglePerimiter
+Takes the base and two sides of a triangle and calculates the perimiter.
+```javascript
+var calqlate = require('calqlate')
+trianglePerimiter = calqlate.trianglePerimiter;
+var a = 3;
+var b = 4;
+var c = 5;
+console.log(triangleArea(a, b, c));
+console.log(triangleArea(3, 4, 5));
+```
 
 ## Tests
 

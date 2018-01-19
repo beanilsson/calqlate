@@ -132,5 +132,29 @@ module.exports = {
             result = r*2;
         }
         return result;
+    },
+    triangleArea: function(b, h, ...a) {
+        if (a.length > 0){
+            return 'Only two values are required';
+        }
+        var result;
+        if (b === undefined || h === undefined){
+            return 'Two values must be provided';
+        }else {
+            result = (b * h)/2;
+        }
+        return result;
+    },
+    trianglePerimiter: function(a, b, c, ...d) {
+        if (d.length > 0){
+            return 'Only three values are required';
+        }
+        var result;
+        if (a === undefined || b === undefined || c === undefined){
+            return 'Three values must be provided';
+        }else {
+            result = a + b + c;
+        }
+        return result;
     }
 };

@@ -9,7 +9,9 @@ var should = require('chai').should(),
     squareDiagonalLength = calqlate.squareDiagonalLength,
     circleRadius = calqlate.circleRadius,
     circleCircumference = calqlate.circleCircumference,
-    circleDiameter = calqlate.circleDiameter;
+    circleDiameter = calqlate.circleDiameter,
+    triangleArea = calqlate.triangleArea,
+    trianglePerimiter = calqlate.trianglePerimiter;
 
 describe('#add', function() {
     it('adds all plain numbers provided', function() {
@@ -260,5 +262,46 @@ describe('#circleDiameter', function() {
 
     it('prints error message if more than one number is provided', function() {
         circleDiameter(2, 3).should.equal('Only one value required');
+    });
+});
+
+describe('#triangleArea', function() {
+    it('calculates the area given plain numbers', function() {
+        triangleArea(5, 10).should.equal(25);
+    });
+
+    it('calculates the area given a variable', function() {
+        var a = 60;
+        var b = 20;
+        triangleArea(a, b).should.equal(600);
+    });
+
+    it('prints error message if no number is provided', function() {
+        triangleArea().should.equal('Two values must be provided');
+    });
+
+    it('prints error message if more than two numbers is provided', function() {
+        triangleArea(2, 3, 4).should.equal('Only two values are required');
+    });
+});
+
+describe('#trianglePerimiter', function() {
+    it('calculates the perimiter given plain numbers', function() {
+        trianglePerimiter(5, 10, 6).should.equal(21);
+    });
+
+    it('calculates the perimiter given variables', function() {
+        var a = 60;
+        var b = 20;
+        var c = 40;
+        trianglePerimiter(a, b, c).should.equal(120);
+    });
+
+    it('prints error message if no number is provided', function() {
+        trianglePerimiter().should.equal('Three values must be provided');
+    });
+
+    it('prints error message if more than three numbers is provided', function() {
+        trianglePerimiter(2, 3, 4, 5).should.equal('Only three values are required');
     });
 });
