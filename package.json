@@ -1,6 +1,6 @@
 {
   "name": "calqlate",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "A nodejs module for performing calculations",
   "main": "index.js",
   "scripts": {
@@ -11,7 +11,23 @@
     "url": "git+https://github.com/beanilsson/calqlate.git"
   },
   "keywords": [
-    "calculation"
+      "calculation",
+      "addition",
+      "subtraction",
+      "multiplication",
+      "division",
+      "geometry",
+      "square",
+      "quadrant",
+      "triangle",
+      "rectangle",
+      "circle",
+      "circumference",
+      "area",
+      "perimiter",
+      "diagonal length",
+      "diameter",
+      "radius"
   ],
   "author": "Bea Nilsson <beanilsson1@gmail.com> (https://github.com/beanilsson)",
   "license": "GPL-3.0",
