@@ -12,7 +12,6 @@ var b = 2;
 var c = 3
 console.log(add(1, 2));
 console.log(add(a, b, c));
-console.log(multiply(a, 2, c, 4));
 ```
 ### subtract
 Takes any number of values, at least 2, and subtracts them.
@@ -24,7 +23,6 @@ var b = 2;
 var c = 3
 console.log(subtract(1, 2));
 console.log(subtract(a, b, c));
-console.log(multiply(a, 2, c, 4));
 ```
 ### multiply
 Takes any number of values, at least 2, and multiplies them.
